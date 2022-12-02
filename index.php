@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <h1>HELLO WORLD</h1>
     <div class="container-fluid">
         <div class="row my-3">
             <h1 id="suwmania" title="game by Arkudias and Barkudias">SUWMANIA</h1>
