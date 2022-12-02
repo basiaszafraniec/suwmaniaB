@@ -1,0 +1,109 @@
+* {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1E1E6;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    background: #666666;
+    /* -webkit-background-clip: text;
+    -moz-background-clip: text; */
+    background-clip: text;
+    /* text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5); */
+    color: #FFFFFF;
+    /* background: #F7C1C1; */
+    text-shadow: 4px 3px 0px #7A7A7A;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    cursor: grabbing;
+}
+
+#start {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 4px 3px 0px #7A7A7A;
+    color: transparent;
+    border: 2px solid color(srgb 0.705 0.5992 0.6441);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #ccaebb;
+    color: white;
+    width: 150px;
+    height: 50px;
+}
+
+#start:hover {
+    animation: shake 0.5s;
+    /* animation-iteration-count: infinite; */
+}
+
+#frame {
+    /* background-color: blue; */
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    /* margin: auto; */
+    /* border: 2px solid white; */
+    /* border-radius: 20px; */
+    /* padding: 10px;*/
+}
+
+
+ #container { 
+    background-color: green;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* align-items: center;
+    align-self: center; */
+    /* border: 2px solid white; */
+    /* padding: 10px; */
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    font-family: Comic Sans MS, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 4px 3px 0px #7A7A7A;
+    border: 1px solid color(srgb 0.705 0.5992 0.6441);
+    border-radius: 17px;
+    transition-duration: 0.2s;
+    background-image: url("tile-pink.png");
+
+}
+
+.tile:hover {
+    /* background-color: red; */
+    /* animation: shake 0.3s; */
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes shake {
+
+    10%,
+    40%,
+    100% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    60% {
+        transform: translate3d(1px, 0, 0);
+    }
+}
